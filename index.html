@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Staff Directory-River College</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--DataTables.min.css cdn-->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+        <!--Multi-select.min.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/css/multi-select.min.css" integrity="sha512-3lMc9rpZbcRPiC3OeFM3Xey51i0p5ty5V8jkdlNGZLttjj6tleviLJfHli6p8EpXZkCklkqNt8ddSroB3bvhrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Font Awesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--External css-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>   
+        
+        
+        <div class="container">
+        <table id="example" class="display table-bordered">
+            <thead>
+                <tr>
+                    <th class="last text-uppercase" scope="col">Last name</th>
+                    <th class="first text-uppercase" scope="col">First name</th>
+                    <th class="tit text-uppercase" scope="col">Title</th>
+                    <th class="dept text-uppercase" scope="col">Department</th>
+                    <th class="phn text-uppercase" scope="col">Phone</th>
+                    <th class="mail text-uppercase" scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abeid</td>
+                    <td>Trang</td>
+                    <td>English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7373</td>
+                    <td>abeidt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adams</td>
+                    <td>Julie</td>
+                    <td>Adjunct Business Professor</td>
+                    <td>Business & Computer Science, Business</td>
+                    <td></td>
+                    <td>adamsj2@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adkins-Pogue</td>
+                    <td>Andi</td>
+                    <td>Librarian</td>
+                    <td>Library & Technology Services, Library</td>
+                    <td>(916) 691-7904</td>
+                    <td>adkinsa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguayo</td>
+                    <td>Alejandra</td>
+                    <td>Instructional Assistant, ESL / Foreign Language Lab</td>
+                    <td>English & Language Studies, ESL</td>
+                    <td>(916) 691-7327</td>
+                    <td>aguayoa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguilar</td>
+                    <td>Gilbert</td>
+                    <td>Clerk II, Tutoring</td>
+                    <td>Library & Technology Services, Tutoring</td>
+                    <td>(916) 691-7425</td>
+                    <td>aguilag@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguirre</td>
+                    <td>Maria</td>
+                    <td>SPA, Admissions & Records</td>
+                    <td>Admissions & Records</td>
+                    <td>(916) 691-7388</td>
+                    <td>aguirrm@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahearn</td>
+                    <td>Thomas</td>
+                    <td>Adjunct, English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7359</td>
+                    <td>ahearnt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahmadi</td>
+                    <td>Abbas</td>
+                    <td>Adjunct Computer Information Science Professor</td>
+                    <td>Business & Computer Science, Computer Information Science</td>
+                    <td></td>
+                    <td>ahmadia@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Akutagawa</td>
+                    <td>Glenn</td>
+                    <td>Print Services Operator II</td>
+                    <td>Facilities & Operations, Print Services</td>
+                    <td>(916) 691-7317</td>
+                    <td>akutagg@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aldredge</td>
+                    <td>Teresa</td>
+                    <td>Umoja Diop Scholars Counselor/Coordinator</td>
+                    <td>Counseling & Student Services, Counseling</td>
+                    <td>(916) 691-7368</td>
+                    <td>aldredt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Abeid</td>
+                    <td>Trang</td>
+                    <td>English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7373</td>
+                    <td>abeidt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adams</td>
+                    <td>Julie</td>
+                    <td>Adjunct Business Professor</td>
+                    <td>Business & Computer Science, Business</td>
+                    <td></td>
+                    <td>adamsj2@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adkins-Pogue</td>
+                    <td>Andi</td>
+                    <td>Librarian</td>
+                    <td>Library & Technology Services, Library</td>
+                    <td>(916) 691-7904</td>
+                    <td>adkinsa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguayo</td>
+                    <td>Alejandra</td>
+                    <td>Instructional Assistant, ESL / Foreign Language Lab</td>
+                    <td>English & Language Studies, ESL</td>
+                    <td>(916) 691-7327</td>
+                    <td>aguayoa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguilar</td>
+                    <td>Gilbert</td>
+                    <td>Clerk II, Tutoring</td>
+                    <td>Library & Technology Services, Tutoring</td>
+                    <td>(916) 691-7425</td>
+                    <td>aguilag@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguirre</td>
+                    <td>Maria</td>
+                    <td>SPA, Admissions & Records</td>
+                    <td>Admissions & Records</td>
+                    <td>(916) 691-7388</td>
+                    <td>aguirrm@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahearn</td>
+                    <td>Thomas</td>
+                    <td>Adjunct, English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7359</td>
+                    <td>ahearnt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahmadi</td>
+                    <td>Abbas</td>
+                    <td>Adjunct Computer Information Science Professor</td>
+                    <td>Business & Computer Science, Computer Information Science</td>
+                    <td></td>
+                    <td>ahmadia@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Akutagawa</td>
+                    <td>Glenn</td>
+                    <td>Print Services Operator II</td>
+                    <td>Facilities & Operations, Print Services</td>
+                    <td>(916) 691-7317</td>
+                    <td>akutagg@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aldredge</td>
+                    <td>Teresa</td>
+                    <td>Umoja Diop Scholars Counselor/Coordinator</td>
+                    <td>Counseling & Student Services, Counseling</td>
+                    <td>(916) 691-7368</td>
+                    <td>aldredt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Abeid</td>
+                    <td>Trang</td>
+                    <td>English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7373</td>
+                    <td>abeidt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adams</td>
+                    <td>Julie</td>
+                    <td>Adjunct Business Professor</td>
+                    <td>Business & Computer Science, Business</td>
+                    <td></td>
+                    <td>adamsj2@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adkins-Pogue</td>
+                    <td>Andi</td>
+                    <td>Librarian</td>
+                    <td>Library & Technology Services, Library</td>
+                    <td>(916) 691-7904</td>
+                    <td>adkinsa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguayo</td>
+                    <td>Alejandra</td>
+                    <td>Instructional Assistant, ESL / Foreign Language Lab</td>
+                    <td>English & Language Studies, ESL</td>
+                    <td>(916) 691-7327</td>
+                    <td>aguayoa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguilar</td>
+                    <td>Gilbert</td>
+                    <td>Clerk II, Tutoring</td>
+                    <td>Library & Technology Services, Tutoring</td>
+                    <td>(916) 691-7425</td>
+                    <td>aguilag@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguirre</td>
+                    <td>Maria</td>
+                    <td>SPA, Admissions & Records</td>
+                    <td>Admissions & Records</td>
+                    <td>(916) 691-7388</td>
+                    <td>aguirrm@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahearn</td>
+                    <td>Thomas</td>
+                    <td>Adjunct, English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7359</td>
+                    <td>ahearnt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahmadi</td>
+                    <td>Abbas</td>
+                    <td>Adjunct Computer Information Science Professor</td>
+                    <td>Business & Computer Science, Computer Information Science</td>
+                    <td></td>
+                    <td>ahmadia@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Akutagawa</td>
+                    <td>Glenn</td>
+                    <td>Print Services Operator II</td>
+                    <td>Facilities & Operations, Print Services</td>
+                    <td>(916) 691-7317</td>
+                    <td>akutagg@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aldredge</td>
+                    <td>Teresa</td>
+                    <td>Umoja Diop Scholars Counselor/Coordinator</td>
+                    <td>Counseling & Student Services, Counseling</td>
+                    <td>(916) 691-7368</td>
+                    <td>aldredt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Abeid</td>
+                    <td>Trang</td>
+                    <td>English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7373</td>
+                    <td>abeidt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adams</td>
+                    <td>Julie</td>
+                    <td>Adjunct Business Professor</td>
+                    <td>Business & Computer Science, Business</td>
+                    <td></td>
+                    <td>adamsj2@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adkins-Pogue</td>
+                    <td>Andi</td>
+                    <td>Librarian</td>
+                    <td>Library & Technology Services, Library</td>
+                    <td>(916) 691-7904</td>
+                    <td>adkinsa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguayo</td>
+                    <td>Alejandra</td>
+                    <td>Instructional Assistant, ESL / Foreign Language Lab</td>
+                    <td>English & Language Studies, ESL</td>
+                    <td>(916) 691-7327</td>
+                    <td>aguayoa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguilar</td>
+                    <td>Gilbert</td>
+                    <td>Clerk II, Tutoring</td>
+                    <td>Library & Technology Services, Tutoring</td>
+                    <td>(916) 691-7425</td>
+                    <td>aguilag@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguirre</td>
+                    <td>Maria</td>
+                    <td>SPA, Admissions & Records</td>
+                    <td>Admissions & Records</td>
+                    <td>(916) 691-7388</td>
+                    <td>aguirrm@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahearn</td>
+                    <td>Thomas</td>
+                    <td>Adjunct, English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7359</td>
+                    <td>ahearnt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahmadi</td>
+                    <td>Abbas</td>
+                    <td>Adjunct Computer Information Science Professor</td>
+                    <td>Business & Computer Science, Computer Information Science</td>
+                    <td></td>
+                    <td>ahmadia@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Akutagawa</td>
+                    <td>Glenn</td>
+                    <td>Print Services Operator II</td>
+                    <td>Facilities & Operations, Print Services</td>
+                    <td>(916) 691-7317</td>
+                    <td>akutagg@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aldredge</td>
+                    <td>Teresa</td>
+                    <td>Umoja Diop Scholars Counselor/Coordinator</td>
+                    <td>Counseling & Student Services, Counseling</td>
+                    <td>(916) 691-7368</td>
+                    <td>aldredt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Abeid</td>
+                    <td>Trang</td>
+                    <td>English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7373</td>
+                    <td>abeidt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adams</td>
+                    <td>Julie</td>
+                    <td>Adjunct Business Professor</td>
+                    <td>Business & Computer Science, Business</td>
+                    <td></td>
+                    <td>adamsj2@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Adkins-Pogue</td>
+                    <td>Andi</td>
+                    <td>Librarian</td>
+                    <td>Library & Technology Services, Library</td>
+                    <td>(916) 691-7904</td>
+                    <td>adkinsa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguayo</td>
+                    <td>Alejandra</td>
+                    <td>Instructional Assistant, ESL / Foreign Language Lab</td>
+                    <td>English & Language Studies, ESL</td>
+                    <td>(916) 691-7327</td>
+                    <td>aguayoa@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguilar</td>
+                    <td>Gilbert</td>
+                    <td>Clerk II, Tutoring</td>
+                    <td>Library & Technology Services, Tutoring</td>
+                    <td>(916) 691-7425</td>
+                    <td>aguilag@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aguirre</td>
+                    <td>Maria</td>
+                    <td>SPA, Admissions & Records</td>
+                    <td>Admissions & Records</td>
+                    <td>(916) 691-7388</td>
+                    <td>aguirrm@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahearn</td>
+                    <td>Thomas</td>
+                    <td>Adjunct, English Professor</td>
+                    <td>English & Language Studies, English</td>
+                    <td>(916) 691-7359</td>
+                    <td>ahearnt@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Ahmadi</td>
+                    <td>Abbas</td>
+                    <td>Adjunct Computer Information Science Professor</td>
+                    <td>Business & Computer Science, Computer Information Science</td>
+                    <td></td>
+                    <td>ahmadia@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Akutagawa</td>
+                    <td>Glenn</td>
+                    <td>Print Services Operator II</td>
+                    <td>Facilities & Operations, Print Services</td>
+                    <td>(916) 691-7317</td>
+                    <td>akutagg@crc.losrios.edu</td>
+                </tr>
+                <tr>
+                    <td>Aldredge</td>
+                    <td>Teresa</td>
+                    <td>Umoja Diop Scholars Counselor/Coordinator</td>
+                    <td>Counseling & Student Services, Counseling</td>
+                    <td>(916) 691-7368</td>
+                    <td>aldredt@crc.losrios.edu</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <!--Jquery Script cdn-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <!--DataTable.min.js cdn-->
+        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/rowreorder/1.2.8/js/dataTables.rowReorder.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+        <!--Bootstrap.bundle.min.js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--External js-->
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

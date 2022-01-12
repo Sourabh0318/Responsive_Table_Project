@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --table-font: 'Open Sans', sans-serif;
+}
+
+.dataTables_wrapper .dataTables_paginate{
+    float: left !important;
+    text-align: left !important;
+    margin-top: 2em !important;
+    margin-bottom: 2em;
+    width: 100% !important;
+    background: #edf2f7 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dataTables_paginate span{
+    padding: 5px 8px;
+}
+.dataTables_wrapper .dataTables_length {
+    text-align: center !important;
+    margin: 60px auto !important;
+    background-color: #edf2f7;
+    padding: 10px 10px;
+    font-family: var(--table-font);
+    position: relative;
+    top: 225px;
+    left: 1px;
+    width: 98.5%;
+}
+.dataTables_filter{
+    float: left !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    width: 100% !important;
+    position: absolute;
+    top: 10px;
+    left: -2px !important;
+    font-family: var(--table-font);
+}
+.dataTables_filter> label{
+    position: relative;
+    padding: 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.dataTables_wrapper .dataTables_filter input{
+    border-radius: 0px !important;
+    width: 18rem;
+    padding: 10px 20px;
+    border: 1px solid #000 !important;
+}   
+#example{
+    margin-top: 80%;
+    overflow-block: initial;
+}
+.dataTables_info{
+    background-color: #edf2f7;
+    padding: 10px 10px !important;
+    margin-top: 13px;
+    position:absolute;
+    top: 160px !important;
+    left: 2px !important;
+    width: 98.5% !important;
+    font-family: var(--table-font);
+}
+.subfilter{
+   margin: 20px 3px !important;
+   width: 291px !important;
+   padding: 10px 10px;
+   background-color: #00263D;
+   color: #fff;
+   border-radius: 0% !important;
+   text-align: start;
+   font-family: var(--table-font);
+   font-size: 18px;
+   position: relative;
+   right: 0px;
+}
+.togg img{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.subfilter:hover{
+    color: #fff;
+}
+.dataTables_filter label i{
+    font-size: x-large;
+    top: 35px;
+    right: 15px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+.division ul li input{
+    width: 30px !important;
+}
+.division ul li label{
+    word-wrap: normal !important;
+}
+.division ul{
+    list-style-type: none;
+}
+.division ul li{
+    line-height: normal;
+    margin-top: 10px;
+}
+.division{
+    width: 100%;
+}
+.odd{
+    background-color: #fff !important;
+}
+.even{
+    background-color: #edf2f7 !important;
+}
+.filter2{
+    width: 90vw;
+}
+.bg{
+    background-color: #EDF2F7;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+thead{
+    background-color: #00263D;
+    color: #fff;
+    font-family: var(--table-font);
+}
+tbody{
+    font-family: var(--table-font);
+}
+.sorting{
+    width: 80px !important;
+}
+.clink{
+    width: 90vw !important;
+    font-family: var(--table-font);
+}
+.text-dark{
+    display: flex;
+    align-items: center;
+}
+#example_previous{
+    display: none;
+}
+#example_next{
+    display: none;
+}
+table.dataTable.display tbody tr.even>.sorting_1{
+    background-color: #edf2f7 !important;
+}
+table.dataTable.display tbody tr.odd>.sorting_1{
+    background-color: #fff !important;
+}
+.last{
+    width: 60px !important;
+    /*padding: 0px 10px !important;*/
+}
+.first{
+    width: 60px !important;
+    /*padding: 0 20px !important;*/
+}
+.tit{
+    width: 105px !important;
+}
+.phn{
+    width: 20px !important;
+}
+.dept{
+    width: 105px !important;
+}
+.mail{
+    width: 55px !important;
+}
+th{
+    padding: 5px !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    background: #35baec !important;
+}
+table.dataTable tbody td{
+    padding: 5px 6px !important;
+}
+.filter{
+    display: none;
+    z-index: 2;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+/*375px Media Query*/
+
+@media(min-width:375px){
+    .subfilter{
+        width: 288px !important;
+    }
+    .dataTables_info{
+        width: 83% !important;
+        left: 50px !important;
+    }
+    .dataTables_length{
+        width: 83% !important;
+        left: 20px !important;
+    }
+    .dataTables_filter{
+        left: 50px !important;
+    }
+    .dataTables_filter input{
+        width: 100% !important;
+    }
+    #example{
+        margin-top: 70% !important;
+    }
+}
+
+/*425px Media Query*/
+@media(min-width:425px){
+    #example{
+        margin-top: 50%;
+    }
+    .dataTables_filter{
+        left: 65px !important;
+    }
+    .dataTables_info{
+        top: 170px;
+        left: 64px !important;
+        width: 72% !important;
+    }
+    .dataTables_length{
+        width: 72% !important;
+        left: 8px !important;
+    }
+   .subfilter{
+       margin: 20px 0px !important;
+       width: 368px;
+   }
+   #example{
+       margin-top: 60% !important;
+   }
+}
+
+/*@media(min-width:576px){
+    .subfilter{
+        margin: 20px 30px !important;
+    }
+    .dataTables_info{
+        top: 155px !important;
+        left: 110px !important;
+        width: 73% !important;
+    }
+    .dataTables_filter label{
+        left: 0px !important;
+    }
+    .dataTables_filter label i{
+        top: 10px !important;
+        right: 5px !important;
+    }
+}*/
+
+/*768px media query*/
+@media(min-width:768px){
+    .dataTables_wrapper .dataTables_length {
+        float: right !important;
+        margin-top: 120px !important;
+        margin-bottom: 20px !important;
+        position: unset;
+        width: 30% !important;
+        padding: 5px 10px !important;
+    }
+    .dataTables_info{
+        top: 110px !important;
+        left: 0px !important;
+        width: 35% !important;
+    }
+    .subfilter{
+        margin-right: 0px !important;
+        width: 250px !important;
+    }
+    .dataTables_filter{
+        left: 0px !important;
+    }
+    .dataTables_filter> label{
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    }
+    .dataTables_filter label input{
+        width: 20rem;
+    }
+    .subfilter{
+        padding: 10px 30px !important;
+    }
+    .dataTables_filter label i{
+        top: 32px !important;
+        right: 8px !important;
+    }
+}
+
+/*1024 media*/
+@media(min-width:1024px){
+    .subfilter{
+        margin: 20px 0px !important;
+    }
+    .dataTables_wrapper .dataTables_length {
+        margin-top: 120px !important;
+        width: 20% !important;
+    }
+    .dataTables_info{
+        top: 112px !important;
+        text-align: center !important;
+    }
+    .dataTables_filter input{
+        width: 23rem !important;
+    }
+    .filter2{
+        width: 84.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
